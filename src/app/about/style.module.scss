@@ -1,0 +1,163 @@
+.header {
+    height: 5rem;
+    border-bottom: 1px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin-left: 1rem;
+        color: white;
+        font-size: 20px;
+        padding: 0 6px;
+    }
+}
+
+.headerContent {
+    display: flex;
+}
+
+@media (max-width: 477px) {
+    .svg {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.gif {
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+
+    p:hover {
+        color: #ff7f50;
+    }
+}
+
+.container {
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkProjects {
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+        &:hover {
+            color: #000000;
+            background-color: white;
+            border: 1px solid black;
+            transition: 0.9s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+}
+
+@media (max-width: 740px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkProjects {
+        &:hover {
+            color: #000000;
+            background-color: white;
+            border: 1px solid black;
+            transition: 0.9s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+.contentTecs {
+    margin-top: 5rem;
+    font-size: 18px;
+    margin-bottom: 5rem;
+}
+
+.tecs {
+    margin-top: 1.5rem;
+}
+
+.tec {
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    width: 70px;
+    height: 60px;
+    padding: 6px;
+
+    &:hover {
+        font-size: 20px;
+        transition: 0.5s;
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 510px) {
+    .contentTecs {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .tecs {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .tec {
+        display: block;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100px;
+        height: 80px;
+        padding: 6px;
+    }
+}
+
+.footer {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    height: 5rem;
+    border-top: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p:hover {
+        color: #ff7f50;
+    }
+}
